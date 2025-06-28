@@ -1,0 +1,872 @@
+CIC-IDS-2017(unified) Dataset Features Summary
+==========================================
+
+Dataset Path: E:/DATASET/CIC-IDS-2017(unified).csv
+Total Records: 2100814
+Total Features: 83
+Numeric Features: 79
+Categorical Features: 4
+
+Class Distribution:
+=================
+Class                               Count           Percentage
+-----------------------------------------------------------------
+BENIGN                              1657693         78.9072%
+PortScan                            159151          7.5757%
+DoS Hulk                            159062          7.5714%
+DDoS                                95123           4.5279%
+DoS GoldenEye                       7647            0.3640%
+DoS slowloris                       5732            0.2728%
+DoS Slowhttptest                    5111            0.2433%
+FTP-Patator                         3984            0.1896%
+SSH-Patator                         2988            0.1422%
+Bot                                 2208            0.1051%
+Web Attack - Brute Force            1365            0.0650%
+Web Attack - XSS                    679             0.0323%
+Infiltration                        48              0.0023%
+Web Attack - Sql Injection          12              0.0006%
+Heartbleed                          11              0.0005%
+
+Features and Their Types:
+=======================
+Feature Name                                       Type                
+---------------------------------------------------------------------------
+Flow ID                                            categorical         
+Src IP                                             categorical         
+Src Port                                           numeric (int64)     
+Dst IP                                             categorical         
+Dst Port                                           numeric (int64)     
+Protocol                                           numeric (int64)     
+Timestamp                                          categorical         
+Flow Duration                                      numeric (int64)     
+Total Fwd Packet                                   numeric (int64)     
+Total Bwd packets                                  numeric (int64)     
+Total Length of Fwd Packet                         numeric (float64)   
+Total Length of Bwd Packet                         numeric (float64)   
+Fwd Packet Length Max                              numeric (float64)   
+Fwd Packet Length Min                              numeric (float64)   
+Fwd Packet Length Mean                             numeric (float64)   
+Fwd Packet Length Std                              numeric (float64)   
+Bwd Packet Length Max                              numeric (float64)   
+Bwd Packet Length Min                              numeric (float64)   
+Bwd Packet Length Mean                             numeric (float64)   
+Bwd Packet Length Std                              numeric (float64)   
+Flow Bytes/s                                       numeric (float64)   
+Flow Packets/s                                     numeric (float64)   
+Flow IAT Mean                                      numeric (float64)   
+Flow IAT Std                                       numeric (float64)   
+Flow IAT Max                                       numeric (float64)   
+Flow IAT Min                                       numeric (float64)   
+Fwd IAT Total                                      numeric (float64)   
+Fwd IAT Mean                                       numeric (float64)   
+Fwd IAT Std                                        numeric (float64)   
+Fwd IAT Max                                        numeric (float64)   
+Fwd IAT Min                                        numeric (float64)   
+Bwd IAT Total                                      numeric (float64)   
+Bwd IAT Mean                                       numeric (float64)   
+Bwd IAT Std                                        numeric (float64)   
+Bwd IAT Max                                        numeric (float64)   
+Bwd IAT Min                                        numeric (float64)   
+Fwd PSH Flags                                      numeric (int64)     
+Bwd PSH Flags                                      numeric (int64)     
+Fwd URG Flags                                      numeric (int64)     
+Bwd URG Flags                                      numeric (int64)     
+Fwd Header Length                                  numeric (int64)     
+Bwd Header Length                                  numeric (int64)     
+Fwd Packets/s                                      numeric (float64)   
+Bwd Packets/s                                      numeric (float64)   
+Packet Length Min                                  numeric (float64)   
+Packet Length Max                                  numeric (float64)   
+Packet Length Mean                                 numeric (float64)   
+Packet Length Std                                  numeric (float64)   
+Packet Length Variance                             numeric (float64)   
+FIN Flag Count                                     numeric (int64)     
+SYN Flag Count                                     numeric (int64)     
+RST Flag Count                                     numeric (int64)     
+PSH Flag Count                                     numeric (int64)     
+ACK Flag Count                                     numeric (int64)     
+URG Flag Count                                     numeric (int64)     
+CWR Flag Count                                     numeric (int64)     
+ECE Flag Count                                     numeric (int64)     
+Down/Up Ratio                                      numeric (float64)   
+Average Packet Size                                numeric (float64)   
+Fwd Segment Size Avg                               numeric (float64)   
+Bwd Segment Size Avg                               numeric (float64)   
+Fwd Bytes/Bulk Avg                                 numeric (int64)     
+Fwd Packet/Bulk Avg                                numeric (int64)     
+Fwd Bulk Rate Avg                                  numeric (int64)     
+Bwd Bytes/Bulk Avg                                 numeric (int64)     
+Bwd Packet/Bulk Avg                                numeric (int64)     
+Bwd Bulk Rate Avg                                  numeric (int64)     
+Subflow Fwd Packets                                numeric (int64)     
+Subflow Fwd Bytes                                  numeric (int64)     
+Subflow Bwd Packets                                numeric (int64)     
+Subflow Bwd Bytes                                  numeric (int64)     
+FWD Init Win Bytes                                 numeric (int64)     
+Bwd Init Win Bytes                                 numeric (int64)     
+Fwd Act Data Pkts                                  numeric (int64)     
+Fwd Seg Size Min                                   numeric (int64)     
+Active Mean                                        numeric (float64)   
+Active Std                                         numeric (float64)   
+Active Max                                         numeric (float64)   
+Active Min                                         numeric (float64)   
+Idle Mean                                          numeric (float64)   
+Idle Std                                           numeric (float64)   
+Idle Max                                           numeric (float64)   
+Idle Min                                           numeric (float64)   
+
+Numeric Feature Statistics (from sample):
+=====================================
+Feature: Src Port
+--------------------------------------------------
+  Min: 0
+  Max: 65473
+  Mean: 23492.191
+  Median: 138.0
+  Std Dev: 27966.63389218979
+  Missing values: 0
+
+Feature: Dst Port
+--------------------------------------------------
+  Min: 0
+  Max: 8612
+  Mean: 362.585
+  Median: 123.0
+  Std Dev: 1080.3561450629024
+  Missing values: 0
+
+Feature: Protocol
+--------------------------------------------------
+  Min: 0
+  Max: 17
+  Mean: 14.756
+  Median: 17.0
+  Std Dev: 4.559742893547316
+  Missing values: 0
+
+Feature: Flow Duration
+--------------------------------------------------
+  Min: 2
+  Max: 119998611
+  Mean: 53009958.826
+  Median: 66094248.5
+  Std Dev: 40384092.08565282
+  Missing values: 0
+
+Feature: Total Fwd Packet
+--------------------------------------------------
+  Min: 1
+  Max: 1266
+  Mean: 19.926
+  Median: 2.0
+  Std Dev: 78.87510257239482
+  Missing values: 0
+
+Feature: Total Bwd packets
+--------------------------------------------------
+  Min: 0
+  Max: 1851
+  Mean: 17.02
+  Median: 2.0
+  Std Dev: 117.06820475502543
+  Missing values: 0
+
+Feature: Total Length of Fwd Packet
+--------------------------------------------------
+  Min: 0.0
+  Max: 121816.0
+  Mean: 1948.231
+  Median: 96.0
+  Std Dev: 8035.997976051893
+  Missing values: 0
+
+Feature: Total Length of Bwd Packet
+--------------------------------------------------
+  Min: 0.0
+  Max: 3149442.0
+  Mean: 20241.248
+  Median: 96.0
+  Std Dev: 201990.66660923656
+  Missing values: 0
+
+Feature: Fwd Packet Length Max
+--------------------------------------------------
+  Min: 0.0
+  Max: 5760.0
+  Mean: 210.489
+  Median: 48.0
+  Std Dev: 622.2725729405355
+  Missing values: 0
+
+Feature: Fwd Packet Length Min
+--------------------------------------------------
+  Min: 0.0
+  Max: 237.0
+  Mean: 43.064
+  Median: 48.0
+  Std Dev: 33.60331958433701
+  Missing values: 0
+
+Feature: Fwd Packet Length Mean
+--------------------------------------------------
+  Min: 0.0
+  Max: 1234.4399999999998
+  Mean: 70.26101445567494
+  Median: 48.0
+  Std Dev: 100.24953233789059
+  Missing values: 0
+
+Feature: Fwd Packet Length Std
+--------------------------------------------------
+  Min: 0.0
+  Max: 1898.9193435565749
+  Mean: 46.27341435625974
+  Median: 0.0
+  Std Dev: 169.41686184052668
+  Missing values: 0
+
+Feature: Bwd Packet Length Max
+--------------------------------------------------
+  Min: 0.0
+  Max: 4753.0
+  Mean: 397.694
+  Median: 48.0
+  Std Dev: 874.2716999705351
+  Missing values: 0
+
+Feature: Bwd Packet Length Min
+--------------------------------------------------
+  Min: 0.0
+  Max: 622.0
+  Mean: 57.211
+  Median: 48.0
+  Std Dev: 57.43053844206709
+  Missing values: 0
+
+Feature: Bwd Packet Length Mean
+--------------------------------------------------
+  Min: 0.0
+  Max: 2034.1308411214952
+  Mean: 157.72739652770736
+  Median: 48.0
+  Std Dev: 290.6882169577415
+  Missing values: 0
+
+Feature: Bwd Packet Length Std
+--------------------------------------------------
+  Min: 0.0
+  Max: 1279.7110233274568
+  Mean: 97.008665843072
+  Median: 0.0
+  Std Dev: 235.56509743992908
+  Missing values: 0
+
+Feature: Flow Bytes/s
+--------------------------------------------------
+  Min: 0.0
+  Max: 142200000.0
+  Mean: 2700686.8554415707
+  Median: 33.55496478757503
+  Std Dev: 16036232.707613304
+  Missing values: 0
+
+Feature: Flow Packets/s
+--------------------------------------------------
+  Min: 0.036496801579983
+  Max: 1000000.0
+  Mean: 24343.841766409903
+  Median: 0.290389097113785
+  Std Dev: 123792.44148115072
+  Missing values: 0
+
+Feature: Flow IAT Mean
+--------------------------------------------------
+  Min: 1.2727272727272725
+  Max: 36532881.66666667
+  Mean: 9141517.381159415
+  Median: 3577525.1515151514
+  Std Dev: 10154317.471440017
+  Missing values: 0
+
+Feature: Flow IAT Std
+--------------------------------------------------
+  Min: 0.0
+  Max: 63176703.96039828
+  Mean: 17278802.555636927
+  Median: 12787593.156290928
+  Std Dev: 16994143.2330486
+  Missing values: 0
+
+Feature: Flow IAT Max
+--------------------------------------------------
+  Min: 2.0
+  Max: 110240492.0
+  Mean: 38754734.097
+  Median: 58036280.0
+  Std Dev: 30616415.045605466
+  Missing values: 0
+
+Feature: Flow IAT Min
+--------------------------------------------------
+  Min: -1.0
+  Max: 1121819.0
+  Mean: 38826.967
+  Median: 30299.0
+  Std Dev: 63106.2247048293
+  Missing values: 0
+
+Feature: Fwd IAT Total
+--------------------------------------------------
+  Min: 0.0
+  Max: 119998587.0
+  Mean: 52966293.026
+  Median: 66000200.0
+  Std Dev: 40391612.16182656
+  Missing values: 0
+
+Feature: Fwd IAT Mean
+--------------------------------------------------
+  Min: 0.0
+  Max: 109506559.0
+  Mean: 26078271.027883485
+  Median: 7337359.733333334
+  Std Dev: 30536155.83246393
+  Missing values: 0
+
+Feature: Fwd IAT Std
+--------------------------------------------------
+  Min: 0.0
+  Max: 63647579.22704073
+  Mean: 5149067.462889218
+  Median: 0.0
+  Std Dev: 9861611.636140544
+  Missing values: 0
+
+Feature: Fwd IAT Max
+--------------------------------------------------
+  Min: 0.0
+  Max: 110240844.0
+  Mean: 38770601.692
+  Median: 58096924.5
+  Std Dev: 30656801.589809515
+  Missing values: 0
+
+Feature: Fwd IAT Min
+--------------------------------------------------
+  Min: 0.0
+  Max: 109506559.0
+  Mean: 23666803.42
+  Median: 166.5
+  Std Dev: 31886384.54323984
+  Missing values: 0
+
+Feature: Bwd IAT Total
+--------------------------------------------------
+  Min: 0.0
+  Max: 119998559.0
+  Mean: 49698124.453
+  Median: 66000076.0
+  Std Dev: 40936199.637994945
+  Missing values: 0
+
+Feature: Bwd IAT Mean
+--------------------------------------------------
+  Min: 0.0
+  Max: 109575131.0
+  Mean: 25697779.206579715
+  Median: 7349472.21875
+  Std Dev: 30443820.02728863
+  Missing values: 0
+
+Feature: Bwd IAT Std
+--------------------------------------------------
+  Min: 0.0
+  Max: 63647491.18112468
+  Mean: 4928939.008185862
+  Median: 0.0
+  Std Dev: 9923905.004383843
+  Missing values: 0
+
+Feature: Bwd IAT Max
+--------------------------------------------------
+  Min: 0.0
+  Max: 110240692.0
+  Mean: 36976226.694
+  Median: 57999958.5
+  Std Dev: 31179059.058406774
+  Missing values: 0
+
+Feature: Bwd IAT Min
+--------------------------------------------------
+  Min: 0.0
+  Max: 109575131.0
+  Mean: 23280569.489
+  Median: 4.0
+  Std Dev: 31747232.86332248
+  Missing values: 0
+
+Feature: Fwd PSH Flags
+--------------------------------------------------
+  Min: 0
+  Max: 176
+  Mean: 2.717
+  Median: 0.0
+  Std Dev: 10.982054294006952
+  Missing values: 0
+
+Feature: Bwd PSH Flags
+--------------------------------------------------
+  Min: 0
+  Max: 386
+  Mean: 4.288
+  Median: 0.0
+  Std Dev: 23.75747195038802
+  Missing values: 0
+
+Feature: Fwd URG Flags
+--------------------------------------------------
+  Min: 0
+  Max: 0
+  Mean: 0.0
+  Median: 0.0
+  Std Dev: 0.0
+  Missing values: 0
+
+Feature: Bwd URG Flags
+--------------------------------------------------
+  Min: 0
+  Max: 0
+  Mean: 0.0
+  Median: 0.0
+  Std Dev: 0.0
+  Missing values: 0
+
+Feature: Fwd Header Length
+--------------------------------------------------
+  Min: 0
+  Max: 32384
+  Mean: 330.564
+  Median: 16.0
+  Std Dev: 1765.558590089561
+  Missing values: 0
+
+Feature: Bwd Header Length
+--------------------------------------------------
+  Min: 0
+  Max: 59240
+  Mean: 385.872
+  Median: 16.0
+  Std Dev: 3111.9102765319544
+  Missing values: 0
+
+Feature: Fwd Packets/s
+--------------------------------------------------
+  Min: 0.0182484007899915
+  Max: 1000000.0
+  Mean: 24094.203158051172
+  Median: 0.1525822275091577
+  Std Dev: 123812.01504437551
+  Missing values: 0
+
+Feature: Bwd Packets/s
+--------------------------------------------------
+  Min: 0.0
+  Max: 15384.615384615388
+  Mean: 249.6386083587348
+  Median: 0.09382874332971915
+  Std Dev: 1513.671809336548
+  Missing values: 0
+
+Feature: Packet Length Min
+--------------------------------------------------
+  Min: 0.0
+  Max: 237.0
+  Mean: 43.062
+  Median: 48.0
+  Std Dev: 33.60585528608831
+  Missing values: 0
+
+Feature: Packet Length Max
+--------------------------------------------------
+  Min: 0.0
+  Max: 5760.0
+  Mean: 452.569
+  Median: 50.0
+  Std Dev: 1004.3121617092751
+  Missing values: 0
+
+Feature: Packet Length Mean
+--------------------------------------------------
+  Min: 0.0
+  Max: 1213.3762906309748
+  Mean: 122.64453678299323
+  Median: 48.0
+  Std Dev: 179.37258749755688
+  Missing values: 0
+
+Feature: Packet Length Std
+--------------------------------------------------
+  Min: 0.0
+  Max: 1387.3324096669407
+  Mean: 111.29856001439347
+  Median: 0.0
+  Std Dev: 243.62550605789087
+  Missing values: 0
+
+Feature: Packet Length Variance
+--------------------------------------------------
+  Min: 0.0
+  Max: 1924691.2149122804
+  Mean: 71681.40327603903
+  Median: 0.0
+  Std Dev: 234091.26660832317
+  Missing values: 0
+
+Feature: FIN Flag Count
+--------------------------------------------------
+  Min: 0
+  Max: 1
+  Mean: 0.001
+  Median: 0.0
+  Std Dev: 0.0316227766016838
+  Missing values: 0
+
+Feature: SYN Flag Count
+--------------------------------------------------
+  Min: 0
+  Max: 4
+  Mean: 0.335
+  Median: 0.0
+  Std Dev: 0.8157453281756755
+  Missing values: 0
+
+Feature: RST Flag Count
+--------------------------------------------------
+  Min: 0
+  Max: 0
+  Mean: 0.0
+  Median: 0.0
+  Std Dev: 0.0
+  Missing values: 0
+
+Feature: PSH Flag Count
+--------------------------------------------------
+  Min: 0
+  Max: 479
+  Mean: 7.005
+  Median: 0.0
+  Std Dev: 33.32316624224667
+  Missing values: 0
+
+Feature: ACK Flag Count
+--------------------------------------------------
+  Min: 0
+  Max: 3093
+  Mean: 26.413
+  Median: 0.0
+  Std Dev: 187.010147388387
+  Missing values: 0
+
+Feature: URG Flag Count
+--------------------------------------------------
+  Min: 0
+  Max: 0
+  Mean: 0.0
+  Median: 0.0
+  Std Dev: 0.0
+  Missing values: 0
+
+Feature: CWR Flag Count
+--------------------------------------------------
+  Min: 0
+  Max: 0
+  Mean: 0.0
+  Median: 0.0
+  Std Dev: 0.0
+  Missing values: 0
+
+Feature: ECE Flag Count
+--------------------------------------------------
+  Min: 0
+  Max: 0
+  Mean: 0.0
+  Median: 0.0
+  Std Dev: 0.0
+  Missing values: 0
+
+Feature: Down/Up Ratio
+--------------------------------------------------
+  Min: 0.0
+  Max: 2.4227748691099475
+  Mean: 0.9165278544081057
+  Median: 1.0
+  Std Dev: 0.3204664901278385
+  Missing values: 0
+
+Feature: Average Packet Size
+--------------------------------------------------
+  Min: 0.0
+  Max: 1213.376290630975
+  Mean: 122.64453678299324
+  Median: 48.0
+  Std Dev: 179.3725874975569
+  Missing values: 0
+
+Feature: Fwd Segment Size Avg
+--------------------------------------------------
+  Min: 0.0
+  Max: 1234.44
+  Mean: 70.26101445567495
+  Median: 48.0
+  Std Dev: 100.2495323378906
+  Missing values: 0
+
+Feature: Bwd Segment Size Avg
+--------------------------------------------------
+  Min: 0.0
+  Max: 2034.1308411214952
+  Mean: 157.72739652770736
+  Median: 48.0
+  Std Dev: 290.6882169577414
+  Missing values: 0
+
+Feature: Fwd Bytes/Bulk Avg
+--------------------------------------------------
+  Min: 0
+  Max: 20689
+  Mean: 269.641
+  Median: 0.0
+  Std Dev: 1430.2193788333982
+  Missing values: 0
+
+Feature: Fwd Packet/Bulk Avg
+--------------------------------------------------
+  Min: 0
+  Max: 195
+  Mean: 1.804
+  Median: 0.0
+  Std Dev: 9.83678536648769
+  Missing values: 0
+
+Feature: Fwd Bulk Rate Avg
+--------------------------------------------------
+  Min: 0
+  Max: 142200000
+  Mean: 3568986.217
+  Median: 0.0
+  Std Dev: 18742168.191292614
+  Missing values: 0
+
+Feature: Bwd Bytes/Bulk Avg
+--------------------------------------------------
+  Min: 0
+  Max: 216753
+  Mean: 2578.265
+  Median: 0.0
+  Std Dev: 14677.1283248679
+  Missing values: 0
+
+Feature: Bwd Packet/Bulk Avg
+--------------------------------------------------
+  Min: 0
+  Max: 117
+  Mean: 1.666
+  Median: 0.0
+  Std Dev: 8.48601534623032
+  Missing values: 0
+
+Feature: Bwd Bulk Rate Avg
+--------------------------------------------------
+  Min: 0
+  Max: 59178294
+  Mean: 284665.689
+  Median: 0.0
+  Std Dev: 2668299.788210177
+  Missing values: 0
+
+Feature: Subflow Fwd Packets
+--------------------------------------------------
+  Min: 0
+  Max: 1
+  Mean: 0.087
+  Median: 0.0
+  Std Dev: 0.2819760814510879
+  Missing values: 0
+
+Feature: Subflow Fwd Bytes
+--------------------------------------------------
+  Min: 0
+  Max: 607
+  Mean: 39.507
+  Median: 24.0
+  Std Dev: 57.706897655627245
+  Missing values: 0
+
+Feature: Subflow Bwd Packets
+--------------------------------------------------
+  Min: 0
+  Max: 0
+  Mean: 0.0
+  Median: 0.0
+  Std Dev: 0.0
+  Missing values: 0
+
+Feature: Subflow Bwd Bytes
+--------------------------------------------------
+  Min: 0
+  Max: 1192
+  Mean: 82.81
+  Median: 24.0
+  Std Dev: 169.55618301671927
+  Missing values: 0
+
+Feature: FWD Init Win Bytes
+--------------------------------------------------
+  Min: 0
+  Max: 65535
+  Mean: 2213.555
+  Median: 0.0
+  Std Dev: 6961.363106121548
+  Missing values: 0
+
+Feature: Bwd Init Win Bytes
+--------------------------------------------------
+  Min: 0
+  Max: 64240
+  Mean: 398.993
+  Median: 0.0
+  Std Dev: 3247.2156529013355
+  Missing values: 0
+
+Feature: Fwd Act Data Pkts
+--------------------------------------------------
+  Min: 0
+  Max: 389
+  Mean: 9.842
+  Median: 1.0
+  Std Dev: 35.836563664716735
+  Missing values: 0
+
+Feature: Fwd Seg Size Min
+--------------------------------------------------
+  Min: 0
+  Max: 32
+  Mean: 10.62
+  Median: 8.0
+  Std Dev: 6.380620057040876
+  Missing values: 0
+
+Feature: Active Mean
+--------------------------------------------------
+  Min: 0.0
+  Max: 15902635.0
+  Mean: 1028201.9317111471
+  Median: 45331.5
+  Std Dev: 2890872.911950034
+  Missing values: 0
+
+Feature: Active Std
+--------------------------------------------------
+  Min: 0.0
+  Max: 20085605.23066961
+  Mean: 454660.52588983515
+  Median: 0.0
+  Std Dev: 1764728.0415235388
+  Missing values: 0
+
+Feature: Active Max
+--------------------------------------------------
+  Min: 0.0
+  Max: 41802729.0
+  Mean: 1585808.597
+  Median: 45419.0
+  Std Dev: 4135694.6530531216
+  Missing values: 0
+
+Feature: Active Min
+--------------------------------------------------
+  Min: 0.0
+  Max: 15070788.0
+  Mean: 710199.919
+  Median: 25917.5
+  Std Dev: 2649967.344395832
+  Missing values: 0
+
+Feature: Idle Mean
+--------------------------------------------------
+  Min: 0.0
+  Max: 110240492.0
+  Mean: 37343167.520166345
+  Median: 56912364.0
+  Std Dev: 30583326.413106494
+  Missing values: 0
+
+Feature: Idle Std
+--------------------------------------------------
+  Min: 0.0
+  Max: 43133581.5346304
+  Mean: 1502085.8103400222
+  Median: 0.0
+  Std Dev: 6036048.735657618
+  Missing values: 0
+
+Feature: Idle Max
+--------------------------------------------------
+  Min: 0.0
+  Max: 110240492.0
+  Mean: 38696424.35
+  Median: 58036280.0
+  Std Dev: 30688075.954616915
+  Missing values: 0
+
+Feature: Idle Min
+--------------------------------------------------
+  Min: 0.0
+  Max: 110240492.0
+  Mean: 36109253.252
+  Median: 56912364.0
+  Std Dev: 31221265.482988518
+  Missing values: 0
+
+Categorical Feature Examples (from sample):
+=======================================
+Feature: Flow ID
+--------------------------------------------------
+  Unique value count: 524
+  Top values:
+    - 8.6.0.1-8.0.6.4-0-0-0: 8
+    - 192.168.10.9-192.168.10.3-123-123-17: 8
+    - 192.168.10.17-152.2.133.52-123-123-17: 7
+    - 192.168.10.50-204.2.134.163-123-123-17: 7
+    - 192.168.10.50-152.2.133.52-123-123-17: 7
+
+Feature: Src IP
+--------------------------------------------------
+  Unique value count: 12
+  Top values:
+    - 192.168.10.3: 228
+    - 192.168.10.17: 151
+    - 192.168.10.14: 116
+    - 192.168.10.12: 108
+    - 192.168.10.19: 102
+
+Feature: Dst IP
+--------------------------------------------------
+  Unique value count: 148
+  Top values:
+    - 192.168.10.1: 224
+    - 192.168.10.3: 119
+    - 192.168.10.255: 43
+    - 208.75.89.4: 26
+    - 224.0.0.251: 24
+
+Feature: Timestamp
+--------------------------------------------------
+  Unique value count: 411
+  Top values:
+    - 03/07/2017 02:06:33 PM: 24
+    - 03/07/2017 02:06:28 PM: 17
+    - 03/07/2017 02:11:00 PM: 16
+    - 03/07/2017 02:06:32 PM: 15
+    - 03/07/2017 02:06:52 PM: 12
+

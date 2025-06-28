@@ -1,0 +1,33 @@
+Total records: 2100814
+Label column: Label
+Unique classes: 25
+
+Class Distribution:
+================================================================================
+Class                                              Count           Percentage     
+--------------------------------------------------------------------------------
+BENIGN                                             1657693         78.9072%
+PortScan                                           159151          7.5757%
+DoS Hulk                                           158469          7.5432%
+DDoS                                               95123           4.5279%
+DoS GoldenEye                                      7567            0.3602%
+DoS slowloris                                      4001            0.1904%
+FTP-Patator                                        3973            0.1891%
+DoS Slowhttptest - Attempted                       3369            0.1604%
+SSH-Patator                                        2980            0.1418%
+DoS Slowhttptest                                   1742            0.0829%
+DoS slowloris - Attempted                          1731            0.0824%
+Bot - Attempted                                    1470            0.0700%
+Web Attack - Brute Force - Attempted               1214            0.0578%
+Bot                                                738             0.0351%
+Web Attack - XSS - Attempted                       652             0.0310%
+DoS Hulk - Attempted                               593             0.0282%
+Web Attack - Brute Force                           151             0.0072%
+DoS GoldenEye - Attempted                          80              0.0038%
+Infiltration                                       32              0.0015%
+Web Attack - XSS                                   27              0.0013%
+Infiltration - Attempted                           16              0.0008%
+Web Attack - Sql Injection                         12              0.0006%
+FTP-Patator - Attempted                            11              0.0005%
+Heartbleed                                         11              0.0005%
+SSH-Patator - Attempted                            8               0.0004%
